@@ -4,6 +4,7 @@ Nome: Silvana Dias
 Turma: M2
 
 - Sobre o código:
+
 eu criei uma função auxiliar chamada ehSubsequencia que usa dois ponteiros para verificar se uma palavra do dicionário 
 pode ser formada a partir da string s removendo caracteres. Eu percorro s e a palavra ao mesmo tempo, avançando o 
 ponteiro da palavra apenas quando os caracteres coincidem; se ao final todos os caracteres da palavra forem encontrados, 
@@ -13,6 +14,7 @@ uso strcmp para escolher a menor lexicograficamente. Ao final do laço, retorno 
 que pode ser vazia caso nenhuma palavra seja válida.
 
 - Sobre a complexidade:
+
 Tempo – O(N × M × K):
 Percorro todas as N palavras do dicionário e, para cada uma, verifico se é subsequência de s. 
 A verificação de subsequência percorre a string s (tamanho M) e a palavra atual (tamanho até K). 
@@ -24,6 +26,7 @@ Não utilizo estruturas auxiliares proporcionais à entrada, apenas variáveis s
 melhor resultado. Portanto, o uso de memória extra é constante, resultando em O(1) de complexidade espacial.
 
 - Testes feitos:
+
 s = "abpcplea"
 dictionary = ["ale", "apple", "monkey", "plea"]
 Esperado: "apple"
